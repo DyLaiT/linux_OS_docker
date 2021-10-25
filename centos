@@ -1,0 +1,5 @@
+From centos:latest
+MAINTAINER DYY
+VOLUME ["/mount"]
+RUN cat /etc/redhat-release
+CMD ["/bin/bash"]
