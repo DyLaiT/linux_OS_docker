@@ -1,0 +1,4 @@
+From ioft/armhf-ubuntu:trusty
+MAINTAINER DYY
+VOLUME ["/mount"]
+CMD ["/bin/bash"]

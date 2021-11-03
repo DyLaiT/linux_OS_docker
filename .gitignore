@@ -1,5 +1,10 @@
 linux_template
 
+test
+linux_template
+Docker_maker
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
