@@ -1,6 +1,9 @@
 # linux_OS_docker
-save popular linux os dockerfile
+Folder "popular_linux_os" save popular linux os dockerfile.
 
-use qemu to build different OS images.
+In order to execute binary files of different kernels, ubuntu_x64_qemu installs qemu-user-static and binfmt_misc.
 
-docker run -it -v /usr/bin/qemu-arm-static:/usr/bin/qemu-arm-static image_name
+
+# reference
+Build image of arm architecture on x86 machine
+  https://zhuanlan.zhihu.com/p/106054643

@@ -1,4 +1,0 @@
-From ubuntu:18.04
-MAINTAINER DYY
-VOLUME ["/mount"]
-CMD ["/bin/bash"]

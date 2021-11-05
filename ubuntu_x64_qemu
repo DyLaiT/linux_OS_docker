@@ -1,0 +1,6 @@
+From ubuntu:18.04
+MAINTAINER DYY
+COPY qemu_install /qemu_install
+RUN ./qemu_install
+VOLUME ["/mount"]
+CMD ["bash"]

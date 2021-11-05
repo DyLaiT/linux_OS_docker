@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-sudo apt-get update
-sudo apt-get install -y --no-install-recommends qemu-user-static binfmt-support
-sudo apt-get install -y libc6-dev-arm64-cross gcc-aarch64-linux-gnu
-sudo update-binfmts --enable qemu-arm
-sudo update-binfmts --display qemu-arm
-sudo chmod a+x /usr/bin/qemu-*
+apt-get update
+apt-get install -y --no-install-recommends qemu-user-static binfmt-support
+apt-get install -y libc6-dev-arm64-cross gcc-aarch64-linux-gnu
+update-binfmts --enable qemu-arm
+update-binfmts --display qemu-arm
+chmod a+x /usr/bin/qemu-*
