@@ -1,6 +1,11 @@
 From ubuntu:18.04
 MAINTAINER DYY
-COPY qemu_install /qemu_install
-RUN ./qemu_install
+RUN apt-get update -y
+RUN apt-get install -y busybox net-tools tshark
+RUN apt-get install -y --no-install-recommends qemu-user-static binfmt-support
+RUN apt-get install -y libc6-dev-arm64-cross gcc-aarch64-linux-gnu
+RUN update-binfmts --enable qemu-arm
+RUN update-binfmts --display qemu-arm
+RUN chmod a+x /usr/bin/qemu-*
 VOLUME ["/mount"]
 CMD ["bash"]
