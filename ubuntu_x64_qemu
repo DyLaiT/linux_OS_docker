@@ -1,7 +1,7 @@
 From ubuntu:18.04
 MAINTAINER DYY
 RUN apt-get update -y
-RUN apt-get install -y busybox net-tools tshark
+RUN apt-get install -y busybox net-tools tshark wget curl
 RUN apt-get install -y --no-install-recommends qemu-user-static binfmt-support
 RUN apt-get install -y libc6-dev-arm64-cross gcc-aarch64-linux-gnu
 RUN update-binfmts --enable qemu-arm
